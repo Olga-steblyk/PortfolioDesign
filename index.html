@@ -3,19 +3,80 @@
     <head>
         <title>Landing Page for Portfolio</title>
         <!--Links to headers-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap" rel="stylesheet">
         <!---->
         <style>
-            h1 {font-family: 'Texturina', serif;}
+        :root {
+            --main-background: #f1faee;
+            --main-foreground: #1d3557;
+            --pane-padding: 5px 42px;
+            --body-fonts: 'Texturina', serif;
+        }
+        .column {
+            float: center;
+            width: 50%;
+            padding: 15px;
+        }
+        h1 {
+            font-family: 'Texturina', serif;
+            }
+        nav{
+            color:var(--main-background); 
+            background-color: #e63946;
+            font-family:var(--body-fonts);
+        }
+        h1,h2{
+            --main-foreground:#1d3557;
+            font-family: var(--body-fonts);
+            }
+        a{
+            color:var(--main-background); 
+        }
         </style>
     </head>    
     <body>
         <header>
-            <h1>Hello This is a Portfolio</h1>
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">Olga Steblyk</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
         </header>
-        <main></main>
+        <main>
+
+
+            <div class="row">
+                <div class="column" id="home-paragraph-left">
+                    <!--This is the left side of the page-->
+                    <h1>Hi,</h1>
+                    <br />
+                    <h1>Hello,</h1>
+                    <br />
+                    <h1>And welcome!</h1>
+                </div>
+                <div class="column" id="home-paragraph-right">
+                    <!--This is the right side of the page-->
+                    <p>My name is Olga and I am a UX Designer / Research.</p>
+                </div>
+            </div>
+        </main>
         <footer></footer>
     </body>
 </html>
