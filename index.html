@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Landing Page for Portfolio</title>
+        <title>Olga Steblyk UX Portfolio</title>
         <!--Links to headers-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,17 @@
             
         }
         .column {
-            float: center;
-            width: 50%;
+            float: left;
+            width: 40%;
             padding: 15px;
+        }
+        .home-paragraph-right{
+            float: center;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
         }
         nav{
             color:var(--main-background); 
@@ -50,40 +58,22 @@
             padding: 0;
             overflow: hidden;
             background-color: #333;
-            position: -webkit-sticky; /* Safari */
             position: sticky;
             top: 0;             
+            }
+        li a:hover {
+             background-color: var(--accent-color);
             }
         
         </style>
     </head>    
     <body>
-        <header> <!--
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="#">Olga Steblyk</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-                    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarsExample04">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            -->
-            
+        <header>             
             <nav>
                 <ul>
-                    <li><a class="active" href="index.html">Olga Steblyk</a></li>
+                    <li><a class="active" href="">Olga Steblyk</a></li>
                     <li><a href="aboutme.html">About</a></li>
-                    <li><a href="aboutme.html">Contact</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </header>
