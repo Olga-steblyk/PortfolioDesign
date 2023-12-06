@@ -1,8 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>About Me Page</head>    
+    <head>
+        <title>Olga UXD - About Me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz@12..72&display=swap" rel="stylesheet">
+        <!---->
+        <style>
+        :root {
+            --main-background: #f1faee;
+            --sub-background: #e8e7d3;
+            --main-foreground: #131b23;
+            --accent-color: #009438;
+            --pane-padding: 5px 42px;
+            --head-fonts: 'Texturina', serif;
+        }
+        .column {
+            float: left;
+            width: 40%;
+            padding: 15px;
+        }
+        .home-paragraph-right{
+            float: center;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        nav{
+            color:var(--main-background); 
+            background-color:var(--main-foreground);
+            font-family:var(--head-fonts);
+        }
+        h1,h2{
+            --main-foreground:#1d3557;
+            font-family: var(--head-fonts);
+            }
+        a{
+            color:var(--accent-background); 
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li {
+            float: left;
+            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;             
+            }
+        li a:hover {
+             background-color: var(--accent-color);
+            }    
+        </style>
+
+    </head>    
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Olga Steblyk</a></li>
+                    <li><a class="active" href="aboutme.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </header>
         <main>
             <p>Words on a page</p>
         </main>
